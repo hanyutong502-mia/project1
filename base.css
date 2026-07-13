@@ -1,11 +1,82 @@
-body {
-    background-color:black
+@font-face {
+    font-family: AaJin;
+    src: url(fonts/AaJinRiHuaQing-ChunLanMaoKun-2.ttf)
+}
+
+@font-face {
+    font-family: dinglie;
+    src: url(fonts/dingliesongtypeface20241217-2.ttf)
+}
+
+@font-face {
+    font-family: SerifCN-Bold;
+    src: url(fonts/SourceHanSerifCN-Bold-2.otf)
+}
+
+@font-face {
+    font-family: SerifCN-SemiBold;
+    src: url(fonts/SourceHanSerifCN-SemiBold-7.otf)
+}
+
+@font-face {
+    font-family: SerifCN-Regular;
+    src: url(fonts/SourceHanSerifCN-Regular-1.otf)
+}
+
+@font-face {
+    font-family: SerifCN-Heavy;
+    src: url(fonts/SourceHanSerifCN-Heavy-4.otf)
+}
+
+@font-face {
+    font-family: SerifCN-medium;
+    src: url(fonts/SourceHanSerifCN-Medium-6.otf)
+}
+
+@font-face {
+    font-family: SerifCN-light;
+    src: url(fonts/SourceHanSerifCN-Light-5.otf)
+}
+
+@font-face {
+    font-family: SerifCN-Xlight;
+    src: url(fonts/SourceHanSerifCN-ExtraLight-3.otf)
 }
 
 body {
-    color:white
+    background-color:black;
+    color:white;
 }
 
-#text-red {
-    color:red
+.title-content {
+    position:absolute;
+    top:0;
+    padding:40px;
+    padding-left:60px;
+    font-size: 40px;
+    font-family: 'SerifCN-Bold';
+}
+
+.mandatory-scroll-snapping {
+    scroll-snap-type: y mandatory;
+    overflow-y: auto;
+    scrollbar-width: none;
+    height:100vh;
+}
+
+.container {
+    scroll-snap-align: start;
+    position:relative;
+    height:98vh;
+    width:auto;
+    overflow: hidden;
+    margin-bottom:20px;
+}
+
+.bg-img{
+    object-fit:fill;
+}
+
+.bg-vid{
+    object-fit:fill;
 }
