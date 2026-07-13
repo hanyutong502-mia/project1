@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>网页标题</title>
+        <title>《我有一座冒险屋》主页</title>
 
         <meta charset="utf-8" />
         <meta 
@@ -14,11 +14,48 @@
 
     <body>
         <header>
-            <h1>大标题</h1>
+            <!--屏幕上标题放这里-->
         </header>
 
         <main>
-            <p>实验一个普通字体</p>
-            <p id="text-red">红字试一下，换换颜色</p>
+            <section class="mandatory-scroll-snapping" dir="ltr">
+                <!--主页-->
+                <div class="container">
+                    <img class="bg-img" src="images/p1.gif">
+                    <img src="images/title image.png" style="position:absolute; left:0; top:0; max-width:33vw; height:auto; padding:40px;">
+                    <div style="position:absolute; display:inline-block; right:0; bottom:0; padding-right:300px; padding-bottom:120px; font-size: 25px;">
+                        <p style="font-family: 'SerifCN-Regular';">潮绘都市万象，诡见人性实像</p>
+                        <p style="font-family: 'dinglie';">Trendy Visions Paint the Urban World; 
+                            <br>Eerie Truths Reveal the Human Heart.</p>
+                    </div>
+                </div>
+                
+                <!--副页1-->
+                <div class="container">
+                    <video class="bg-vid" autoplay muted loop>
+                        <source src="images/p2.mp4" type="video/mp4">
+                        无法加载视频
+                    </video>
+                    <h1 class="title-content">测试标题文字</h1>
+                    <div style="position:absolute; left:0; bottom:0; padding:70px; padding-bottom:85px; font-size: 20px;">
+                        <p style="font-family: 'dinglie';">Testing testing testing testing testing more testing</p>
+                        <p style="font-family: 'SerifCN-Regula'r;">— — 测试文字</p>
+                    </div>
+                </div>
+
+
+                <!--副页2-->
+                <div class="container">
+                    <img class="bg-img" src="images/p3.jpg">
+                    <h1 class="title-content">测试标题文字</h1>
+                    <div style="position:absolute; display:inline-block; right:0; bottom:0; padding-right:100px; padding-bottom:85px; font-size: 20px;">
+                        <p style="font-family: 'dinglie';">Testing testing testing testing testing more testing</p>
+                        <p style="font-family: 'SerifCN-Regular';">—— 测试文字</p>
+                    </div>
+                </div>
+            </section>
+            
+            
+            
         </main>
     </body>
